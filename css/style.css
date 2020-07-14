@@ -1,0 +1,177 @@
+:root {
+  --blush: hsla(346, 58%, 90%, 1);
+  --pistachio: hsla(106, 36%, 76%, 1);
+  --jungle-green: hsla(166, 93%, 67%, 1);
+  --middle-grey: hsla(44, 10%, 58%, 1);
+  --puce: hsla(346, 29%, 78%, 1);
+  --orange-yellow-crayola: hsla(46, 57%, 89%, 1);
+  --purple-plum: hsla(286, 57%, 74%, 1);
+  --lilac: hsla(286, 16%, 77%, 1);
+  --bud-green: hsla(106, 44%, 71%, 1);
+  --feldgrau: hsla(166, 17%, 39%, 1);
+}
+
+.NOUN {
+  background-color: var(--pistachio);
+}
+
+.SUBJ {
+  background-color: var(--pistachio);
+}
+
+.VERB, .PRT {
+  background-color: var(--blush);
+}
+
+.ROOT {
+  background-color: var(--blush);
+}
+
+.ADJ {
+  background-color: var(--jungle-green);
+}
+
+.ADV {
+  background-color: var(--middle-grey);
+}
+
+.PRON {
+  background-color: var(--puce);
+}
+
+.ADP {
+  background-color: var(--orange-yellow-crayola);
+}
+
+.CONJ {
+  background-color: var(--lilac);
+}
+
+.DET {
+  background-color: var(--purple-plum);
+}
+
+.DISCOURSE {
+  background-color: silver;
+}
+
+.NUM {
+  background-color: var(--bud-green);
+}
+
+.UNKNOWN, .X, .AFFIX {
+  background-color: darksalmon;
+}
+
+html {
+  height: 100%;
+}
+body {
+  padding: 10% 8% 0;
+  text-align: center;
+}
+textarea,
+#resultText {
+  display: block;
+  font-family: mrs-eaves, serif;
+  font-weight: 600;
+  border: none;
+  font-style: normal;
+  color: black;
+  text-align: left;
+  font-size: 30px;
+  line-height: 50px;
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+  height: 200px;
+  background-image: -webkit-linear-gradient(
+    top,
+    transparent,
+    transparent 49px,
+    #cbe1fa 0
+  );
+  background-size: 100% 50px;
+}
+
+#resultText {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.material-icons {
+  margin-top: 8%;
+  font-size: 50px;
+  color: grey;
+}
+
+.material-icons:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#resultMenu,
+.resultKey {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+#resultMenu {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#resultMenu .menuItem {
+  display: inline-block;
+  margin-left: 60px;
+  text-align: center;
+}
+
+#resultMenu .menuItem:hover {
+  cursor: pointer;
+  border-bottom: 1px black dotted;
+}
+
+#resultMenu .menuItem:first-child {
+  margin-left: 0;
+}
+
+#resultMenu .active {
+  border-bottom: 1px black dotted;
+}
+
+.resultKey {
+  text-align: left;
+  display: block;
+  width: 200px;
+  margin: 35px auto 0;
+}
+
+.keyItem {
+  margin-bottom: 7px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.keyColor {
+  margin-right: 10px;
+}

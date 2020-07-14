@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pleasing parsing." />
+  <meta property="og:description" content="Pleasing parsing." />
+  <meta property="og:image" content="tm2.jpg" />
+  <title>Parsley</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://use.typekit.net/pjn7anh.css" />
+
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <textarea id="textinput" placeholder="Hi, I'm Parsley. Please enter a complete sentence."></textarea>
+  <span class="material-icons" id="checkButton">
+    check_circle_outline
+  </span>
+
+  <div id="resultText"></div>
+
+  <div id="resultMenu">
+    <span class="menuItem active" id="pos">P.O.S.</span><span class="menuItem" id="rands">Root & Subj</span>
+  </div>
+  <div id="resultKeys">
+    <div id="resultKeyPOS" class="resultKey">
+      <div id="noun" class="keyItem NOUN">
+        <span class="keyColor">&bull;</span><span class="keyText">Noun</span>
+      </div>
+      <div id="verb" class="keyItem VERB PRT">
+        <span class="keyColor">&bull;</span><span class="keyText">Verb and Particles</span>
+      </div>
+      <div id="adj" class="keyItem ADJ">
+        <span class="keyColor">&bull;</span><span class="keyText">Adjective</span>
+      </div>
+      <div id="adv" class="keyItem ADV">
+        <span class="keyColor">&bull;</span><span class="keyText">Adverb</span>
+      </div>
+      <div id="pronoun" class="keyItem PRON">
+        <span class="keyColor">&bull;</span><span class="keyText">Pronoun</span>
+      </div>
+      <div id="prep" class="keyItem ADP">
+        <span class="keyColor">&bull;</span><span class="keyText">Preposition</span>
+      </div>
+      <div id="conj" class="keyItem CONJ">
+        <span class="keyColor">&bull;</span><span class="keyText">Conjunction</span>
+      </div>
+      <div id="discourse" class="keyItem DISCOURSE">
+        <span class="keyColor">&bull;</span><span class="keyText">Discourse</span>
+      </div>
+      <div id="det" class="keyItem DET">
+        <span class="keyColor">&bull;</span><span class="keyText">Determiner</span>
+      </div>
+      <div id="num" class="keyItem NUM">
+        <span class="keyColor">&bull;</span><span class="keyText">Number</span>
+      </div>
+      <div id="other" class="keyItem UNKNOWN X AFFIX">
+        <span class="keyColor">&bull;</span><span class="keyText">Unknown or Other</span>
+      </div>
+    </div>
+
+    <div id="resultKeyRoot" class="resultKey">
+      <div id="root" class="keyItem ROOT">
+        <span class="keyColor">&bull;</span><span class="keyText">Root Verb</span>
+      </div>
+      <div id="subj" class="keyItem SUBJ">
+        <span class="keyColor">&bull;</span><span class="keyText">Subject</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script type="application/javascript" src="js/main.js"></script>
+</body>
+
+</html>
