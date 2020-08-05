@@ -11,6 +11,11 @@
   --feldgrau: hsla(166, 17%, 39%, 1);
 }
 
+span:hover, .keyItem:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
 .NOUN {
   background-color: var(--pistachio);
 }

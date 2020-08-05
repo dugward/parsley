@@ -1,15 +1,9 @@
-when you have list of words, add a space in front of each word unless it is punctuation or the first word (do the first word and then do the rest in a loop starting at 1). also put each into a span based on its part of speech and then add class for main verb and main subject. 
 
-
-for random color schemes, use root and variables and then link to random css sheet with just the color schemes (use main css for everything else). 
 
 
 todo:
 
-begin button and enter function:
-    label the root
-    label the noun
+when hovering word highlight pos
+vice versa
 
-Root & Sub button:
-    get rid of backgorund of all other words
-    fade all other words
+back button
