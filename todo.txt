@@ -1,9 +1,0 @@
-
-
-
-todo:
-
-when hovering word highlight pos
-vice versa
-
-back button
